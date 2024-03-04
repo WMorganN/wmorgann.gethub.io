@@ -217,13 +217,19 @@ margin-top: -75px;
 
 /*following code designs about page*/
 /*imports image*/
-/*
-.img_me {
-    width: 350px;
-    margin-left: 75%;
-    margin-top: -20%;
+
+
+.image_me{
+    width: 500px;
+    height: 350px;
+    border: solid black;
+    background-image: url(images/IMG_3253.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-*/
+
+
 /*sets header size, color, and spacing*/
 .about_header {
     width: 90%;
@@ -336,6 +342,13 @@ button {
     border-radius: 30px;
     margin-top: 20px;
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    transition: all .50s ;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #080228;
+
 }
 
 .contact-left h3 {
