@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--ensures navigation bar stays accross each screen-->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo">Get To Know Me</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/about.html" class="navbar_links">About</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/contact.html" class="navbar_button">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+<script src="app.js"></script>
+
+
+    <!--sets up information boxes for contact page-->
+
+    <div class="container">
+        <div class="connect_header">
+            <h1> Connect With Me</h1>
+        </div>
+        <div class="contact_box">
+            <div class="contact-left">
+                <h2>Message Me</h2>
+                <form>
+
+                <!--sets up name, email, and message capture-->
+                    <div class="input_row">
+                        <div class="input_group">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Doe" >
+                        </div>
+                       
+                        
+                    </div>
+
+                    <div class="input_row">
+                        <div class="input_group">
+                            <label>Email</label>
+                            <input type="email" placeholder="johndoe@email.com">
+                        </div>
+                    </div>
+
+                    <label>Message</label>
+                    <textarea rows=5 placeholder="Your Message"></textarea>
+
+
+                    <button type="submit">Send</button>
+
+                </form>
+                
+            </div>
+            
+        </div>
+        <!--sets footer-->
+        <style>
+            .footer {
+                position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #D3D3D3;
+    color: black;
+    text-align: center;
+    font-size: larger;
+               }
+           </style>
+           <div class="footer">
+               <p>© 2024, All Rights Reserved</p>
+           </div>
+</body>
+</html>
