@@ -1,8 +1,19 @@
-/*allows for dropdown bar to work*/
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar_menu');
+const express = require('express');
+const app = express();
+const port = 3000;
 
-menu.addEventListener('click', function() {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html'); // send HTML file on GET request
+});
+
+app.post('/submit-form', (req, res) => {
+    const username = req.body.username; // access form data
+    // Add validation logic here
+    res.send(`Username is $wmorgann`);
+});
+
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
 });
