@@ -220,8 +220,8 @@ margin-top: -75px;
 
 
 .image_me{
-    width: 500px;
-    height: 350px;
+    max-width: 25%;
+    max-height: 15%;
     border: solid black;
     background-image: url(images/IMG_3253.jpg);
     background-position: center;
