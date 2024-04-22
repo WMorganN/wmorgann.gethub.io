@@ -245,6 +245,8 @@ margin-top: -75px;
 }
 img {
     max-width: 25%;
+    max-height: 15%;
+    object-fit: contain;
     aspect-ratio: auto;
     float: left;
 }
